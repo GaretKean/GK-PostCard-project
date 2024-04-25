@@ -1,0 +1,52 @@
+/* Garet Kean CSS file for the Postcard-Project
+/*Remove the /* and the comment close to add borders to the whole postcard.*/
+/** {
+	border: 1px dashed red;
+	min-height: 10px;
+    
+}
+*/
+body {
+	background: black;
+}
+.postcard {
+	background-color: white;
+	width: 400px;
+	height: 300px;
+	margin: auto;
+}
+.postcard-header {
+	display: flex;
+}
+.postcard-header img {
+	width: 50px;
+	height: 50px;
+}
+.postcard-header h1 {
+	width: 355px;
+	margin: 0;
+}
+.postcard-body {
+	display: flex;
+}
+/* adding p:first-child selects the first <p> inside of the .body-left class.  */
+.body-left p:first-child {
+	margin-top: 0;
+}
+.body-left,
+.body-right {
+	padding: 10px;
+}
+input {
+	border: none;
+	border-bottom: 3px gray solid;
+}
+.postcard-footer {
+	text-align: center;
+}
+button {
+	background-color: rgb(5, 133, 175);
+	padding: 5px;
+	color: rgb(1, 1, 158);
+}
+/*being able to select the specific color you want with dragging the mouse is great! */
